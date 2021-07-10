@@ -2,7 +2,7 @@ const { app, BrowserWindow } = require('electron')
 function createWindow () {
   const win = new BrowserWindow({
     title: "Carbon Footprint",
-    width: 800,
+    width: 350,
     height: 600
   })
 
