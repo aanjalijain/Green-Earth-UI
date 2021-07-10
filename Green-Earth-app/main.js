@@ -3,10 +3,15 @@ function createWindow () {
   const win = new BrowserWindow({
     title: "Carbon Footprint",
     width: 350,
-    height: 600
+    height: 600,
+    icon: null,
+    frame: false 
   })
-
-  win.loadFile('index.html')
+  win.removeMenu(true);
+  win.loadFile('index.html');
+  win.setSkipTaskbar(true);
+  win.setResizable(false);
+ 
 }
 app.on('ready',createWindow);
 app.on('window-all-closed', function () {
